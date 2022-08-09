@@ -2,7 +2,7 @@
 Analysis of the Large Dataset provided by OCR using R
 
 ## Attributions
-Copyright: 'Large Data Set.xlsx', OCR:
-  Copyright: table CT0015EW: Method of Travel to Work, Census 2011, © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.ons.gov.uk
-  Copyright: Table KS15: Neighbourhood Statistics - Method to Travel, Census 2001. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.neighbourhood.statistics.gov.uk
-  Copyright: Table KS102EW: Age Structure Census 2011. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.nomisweb.co.uk
+- Copyright: 'Large Data Set.xlsx', OCR:
+  - Copyright: table CT0015EW: Method of Travel to Work, Census 2011, © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.ons.gov.uk
+  - Copyright: Table KS15: Neighbourhood Statistics - Method to Travel, Census 2001. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.neighbourhood.statistics.gov.uk
+  - Copyright: Table KS102EW: Age Structure Census 2011. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. www.nomisweb.co.uk
