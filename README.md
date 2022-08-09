@@ -1,5 +1,6 @@
 # lds-analysis
-Analysis of the Large Dataset provided by OCR using R
+Analysis of the Large Dataset provided by OCR using R.
+Requires Nix (I used 22.05) to load the R environment described in `default.nix`
 
 ## Attributions
 - Copyright: 'Large Data Set.xlsx', OCR:
