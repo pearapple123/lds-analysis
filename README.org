@@ -1,10 +1,10 @@
 * lds-analysis
 Analysis of the Large Dataset provided by OCR using R.
 
-Requires Nix (I used 22.05) to load the R environment described in `default.nix`
+Requires Nix (I used 22.05) to load the R environment described in =default.nix=
 
 ** Cleaned data
-Use dataframes in your own script with `source("/path/to/cleaneddata.R")`.
+Use dataframes in your own script with =source("/path/to/cleaneddata.R")= .
 
 *** Dataframes
 - `veh.2011` for 2011 transport data
