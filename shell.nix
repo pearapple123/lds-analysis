@@ -6,7 +6,6 @@ with import <nixpkgs> {};
 
     buildInputs = with rPackages; [
       R
-      readxl
       dplyr
       GGally
     ] ++ [ pkgs.evince ];

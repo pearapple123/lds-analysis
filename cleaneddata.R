@@ -1,16 +1,8 @@
-library(readxl)
-
-veh.2011 <- read_excel("./assets/Large Data Set.xlsx", 2)
-veh.2001 <- read_excel("./assets/Large Data Set.xlsx", 3)
-age.2011 <- read_excel("./assets/Large Data Set.xlsx", 4)
-age.2001 <- read_excel("./assets/Large Data Set.xlsx", 5)
+# check.names=FALSE prevents full stops replacing spaces in colnames
+veh.2011 <- read.csv("./assets/veh2011.csv", check.names=FALSE)
+veh.2001 <- read.csv("./assets/veh2001.csv", check.names=FALSE)
+age.2011 <- read.csv("./assets/age2011.csv", check.names=FALSE)
+age.2001 <- read.csv("./assets/age2001.csv", check.names=FALSE)
 
 # clean up
-veh.2011 <- veh.2011[-c(16)]
 veh.2001$"Underground, metro, light rail, tram" <- as.double(veh.2001$"Underground, metro, light rail, tram")
-
-# rename col 3 to "LA" for brevity
-colnames(veh.2011)[3] <- 'LA'
-colnames(veh.2001)[3] <- 'LA'
-colnames(age.2011)[3] <- 'LA'
-colnames(age.2001)[3] <- 'LA'
