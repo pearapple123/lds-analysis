@@ -1,0 +1,31 @@
+* Question 1
+Which district had the largest percentage of people who travel to work on foot in 2001?
+
+Combine the 2001 and 2011 transport databases, designating separate columns for 2001 transport and 2011 transport data.
+#+BEGIN_SRC R
+source("./cleaneddata.R")
+library(dplyr)
+
+veh <- merge(veh.2001, veh.2011, by=c("geography code", "local authority: \r\ndistrict / unitary", "Region"))
+#+end_src
+
+Calculate proportion of workers travelling on foot for both years.
+#+begin_src R
+veh$foot.prop.01 <- veh["On foot.x"] * 100 / veh["All Categories of people in employment.x"]
+veh$foot.prop.11 <- veh["On foot.y"] * 100 / veh["All Categories of people in employment.y"]
+#+end_src
+
+Sort dataframe by foot proportion and extract the region, LA name and foot proportion from the dataframe
+#+begin_src R
+v01.q1 <- dplyr::arrange(veh, foot.prop.01)[c(1,2,"foot.prop.01")]
+v11.q1 <- dplyr::arrange(veh, foot.prop.11)[c(1,2,"foot.prop.11")]
+#+end_src
+
+Take the head/tail of 2001 and 2011 dataframes to get the answer
+#+begin_src R
+# Highest and lowest proportions of people walking to work in 2001 and 2011
+lowest.prop.01  <- head(v01.q1, 5)
+highest.prop.01 <- tail(v01.q1, 5)
+lowest.prop.11  <- head(v11.q1, 5)
+highest.prop.11 <- tail(v11.q1, 5)
+#+END_SRC

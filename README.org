@@ -1,0 +1,68 @@
+* lds-analysis
+Analysis of the Large Dataset provided by OCR using R.
+
+Requires Nix (I used 22.05) to load the R environment described in `default.nix`
+
+** Cleaned data
+Use dataframes in your own script with `source("/path/to/cleaneddata.R")`.
+
+*** Dataframes
+- `veh.2011` for 2011 transport data
+- `veh.2001` for 2001 transport data
+- `age.2011` for 2011 age data
+- `age.2001` for 2001 age data
+
+*** Column names
+**** Transport data
+#+begin_src 
+ [1] "geography code"                        
+ [2] "Region"                                
+ [3] "LA"                                    
+ [4] "All Categories of people in employment"
+ [5] "Work mainly at or from home"           
+ [6] "Underground, metro, light rail, tram"  
+ [7] "Train"                                 
+ [8] "Bus, minibus or coach"                 
+ [9] "Taxi"                                  
+[10] "Motorcycle, scooter or moped"          
+[11] "Driving a car or van"                  
+[12] "Passenger in a car or van"             
+[13] "Bicycle"                               
+[14] "On foot"                               
+[15] "Other method of travel to work"        
+[16] "Not in employment"   
+#+end_src
+
+**** Age data
+#+begin_src
+ [1] "geography code"
+ [2] "Region"
+ [3] "LA"                 
+ [4] "All usual residents"
+ [5] "Age 0 to 4"
+ [6] "Age 5 to 7"         
+ [7] "Age 8 to 9"
+ [8] "Age 10 to 14"
+ [9] "Age 15"             
+[10] "Age 16 to 17"
+[11] "Age 18 to 19"
+[12] "Age 20 to 24"       
+[13] "Age 25 to 29"
+[14] "Age 30 to 44"
+[15] "Age 45 to 59"       
+[16] "Age 60 to 64"
+[17] "Age 65 to 74"
+[18] "Age 75 to 84"       
+[19] "Age 85 to 89"
+[20] "Age 90 and over"
+[21] "Mean Age"           
+[22] "Median Age"   
+#+end_src
+
+** Attributions
++ Copyright: 'Large Data Set.xlsx', OCR:
+  - Copyright: table CT0015EW: Method of Travel to Work, Census 2011, © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. [[www.ons.gov.uk]]
+  - Copyright: Table KS15: Neighbourhood Statistics - Method to Travel, Census 2001. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. [[www.neighbourhood.statistics.gov.uk]]
+  - Copyright: Table KS102EW: Age Structure Census 2011. © Crown copyright, Office for National Statistics licensed under the Open Government Licence v.3.0. [[www.nomisweb.co.uk]]
+
+  
