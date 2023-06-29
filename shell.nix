@@ -8,6 +8,6 @@ with import <nixpkgs> {};
       R
       dplyr
       GGally
-    ] ++ [ pkgs.evince ];
+    ];
   };
 }
